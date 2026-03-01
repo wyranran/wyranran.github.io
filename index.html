@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
 
-    <title>传讯</title>
+    <title>starsnmoon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
@@ -9148,7 +9148,7 @@
             </div>
 
             <div class="text-tech-container">
-                <div class="welcome-title-glitch" id="welcome-title-glitch" data-text="传讯">
+                <div class="welcome-title-glitch" id="welcome-title-glitch" data-text="starsnmoon">
                     加载失败
                 </div>
                 <div class="welcome-subtitle-scramble" id="welcome-subtitle-scramble">
@@ -9170,7 +9170,7 @@
         <div class="header-inner">
          <div class="user-info">
                 <div id="partner-name" class="username">
-                    梦角
+                    他
                 </div>
                 <div id="partner-avatar-container" class="avatar-container">
                     <div class="avatar" id="partner-avatar">
@@ -9843,7 +9843,7 @@
             </div>
             <input type="file" id="my-frame-file-input-2" class="file-input" accept="image/png, image/webp, image/gif">
 
-            <h4 style="font-size:13px;font-weight:600;margin:20px 0 8px;border-top:1px dashed var(--border-color);padding-top:14px;color:var(--text-primary);">梦角的头像框</h4>
+            <h4 style="font-size:13px;font-weight:600;margin:20px 0 8px;border-top:1px dashed var(--border-color);padding-top:14px;color:var(--text-primary);">他的头像框</h4>
             <div class="frame-settings-container">
                 <div class="frame-preview-wrapper">
                     <div class="frame-preview" id="partner-frame-preview-2"></div>
@@ -9931,9 +9931,9 @@
                     <i class="fas fa-user-edit"></i>昵称设置
                 </div>
                 <div style="display:flex;gap:10px;">
-                    <button onclick="(function(){var m=document.getElementById('edit-modal'),ti=m.querySelector('#edit-modal-title'),ni=m.querySelector('#name-input'),sb=m.querySelector('#save-name');ti.textContent='修改梦角的昵称';ni.value=(typeof settings!=='undefined'?settings.partnerName:'梦角');sb.disabled=!ni.value.trim();sb.onclick=function(){var n=ni.value.trim();if(n){settings.partnerName=n;var pEls=document.querySelectorAll('.username[data-role=partner],.partner-name,.contact-name');pEls.forEach(function(el){el.textContent=n;});if(typeof throttledSaveData==='function')throttledSaveData();if(typeof updateUI==='function')updateUI();if(typeof showNotification==='function')showNotification('梦角昵称已更新为「'+n+'」✦','success');}if(typeof hideModal==='function')hideModal(m);};if(typeof showModal==='function')showModal(m,ni);})()" style="flex:1;padding:11px 10px;border:1px solid var(--border-color);border-radius:12px;background:var(--primary-bg);color:var(--text-primary);font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;font-family:var(--font-family);transition:all 0.2s;">
+                    <button onclick="(function(){var m=document.getElementById('edit-modal'),ti=m.querySelector('#edit-modal-title'),ni=m.querySelector('#name-input'),sb=m.querySelector('#save-name');ti.textContent='修改他的昵称';ni.value=(typeof settings!=='undefined'?settings.partnerName:'他');sb.disabled=!ni.value.trim();sb.onclick=function(){var n=ni.value.trim();if(n){settings.partnerName=n;var pEls=document.querySelectorAll('.username[data-role=partner],.partner-name,.contact-name');pEls.forEach(function(el){el.textContent=n;});if(typeof throttledSaveData==='function')throttledSaveData();if(typeof updateUI==='function')updateUI();if(typeof showNotification==='function')showNotification('他昵称已更新为「'+n+'」✦','success');}if(typeof hideModal==='function')hideModal(m);};if(typeof showModal==='function')showModal(m,ni);})()" style="flex:1;padding:11px 10px;border:1px solid var(--border-color);border-radius:12px;background:var(--primary-bg);color:var(--text-primary);font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;font-family:var(--font-family);transition:all 0.2s;">
                         <i class="fas fa-user" style="color:var(--accent-color);font-size:14px;"></i>
-                        <span>修改梦角名称</span>
+                        <span>修改他的名称</span>
                     </button>
                     <button onclick="(function(){var m=document.getElementById('edit-modal'),ti=m.querySelector('#edit-modal-title'),ni=m.querySelector('#name-input'),sb=m.querySelector('#save-name');ti.textContent='修改我的昵称';ni.value=(typeof settings!=='undefined'?settings.myName:'我');sb.disabled=!ni.value.trim();sb.onclick=function(){var n=ni.value.trim();if(n){settings.myName=n;if(typeof throttledSaveData==='function')throttledSaveData();if(typeof updateUI==='function')updateUI();if(typeof showNotification==='function')showNotification('我的昵称已更新为「'+n+'」✦','success');}if(typeof hideModal==='function')hideModal(m);};if(typeof showModal==='function')showModal(m,ni);})()" style="flex:1;padding:11px 10px;border:1px solid var(--border-color);border-radius:12px;background:var(--primary-bg);color:var(--text-primary);font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;font-family:var(--font-family);transition:all 0.2s;">
                         <i class="fas fa-user-circle" style="color:var(--accent-color);font-size:14px;"></i>
@@ -10378,7 +10378,7 @@
             
             <div id="mood-edit-target-tabs" style="display:flex; gap:6px; justify-content:center; margin:8px 0 4px;">
                 <button class="mood-tab-btn active" id="mood-tab-me" onclick="switchMoodEditTarget('me')" data-name-me>我的记录</button>
-                <button class="mood-tab-btn" id="mood-tab-partner" onclick="switchMoodEditTarget('partner')" data-name-partner>梦角的记录</button>
+                <button class="mood-tab-btn" id="mood-tab-partner" onclick="switchMoodEditTarget('partner')" data-name-partner>他的记录</button>
             </div>
 
             <div style="display:flex; align-items:center; justify-content:space-between; margin:8px 0 4px;">
@@ -10445,7 +10445,7 @@
                 <div id="detail-my-weather" style="font-size:12px;color:var(--text-secondary);margin-top:4px;display:none;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:3px"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg><span id="detail-my-weather-val"></span></div>
             </div>
                 <div id="detail-partner-section" style="border-top:1px dashed var(--border-color); padding-top:10px; margin-top:4px;">
-                <div style="font-size:11px; opacity:0.6; margin-bottom:6px; font-weight:600;" id="detail-partner-title">梦角的</div>
+                <div style="font-size:11px; opacity:0.6; margin-bottom:6px; font-weight:600;" id="detail-partner-title">他的</div>
                 <div style="display:flex; align-items:center; gap:10px; margin-bottom:6px;">
                     <span id="detail-partner-kaomoji" style="font-size:24px;"></span>
                     <span id="detail-partner-label" style="font-weight:600;"></span>
@@ -10457,9 +10457,9 @@
             <div style="margin-top:20px; display:flex; gap:8px; justify-content:flex-end; flex-wrap:wrap;">
                 <button class="modal-btn modal-btn-secondary" onclick="closeMoodOverlay()" style="font-size:12px; padding:6px 12px;">关闭</button>
                 <button class="modal-btn modal-btn-secondary" id="delete-my-mood" onclick="deleteDailyMood(selectedDateStr,'me')" style="font-size:12px; padding:6px 12px; color:#ff6b6b; border-color:rgba(255,107,107,0.4);" data-delete-me>删除我的</button>
-                <button class="modal-btn modal-btn-secondary" id="delete-partner-mood" onclick="deleteDailyMood(selectedDateStr,'partner')" style="font-size:12px; padding:6px 12px; color:#ff6b6b; border-color:rgba(255,107,107,0.4);" data-delete-partner>删除梦角</button>
+                <button class="modal-btn modal-btn-secondary" id="delete-partner-mood" onclick="deleteDailyMood(selectedDateStr,'partner')" style="font-size:12px; padding:6px 12px; color:#ff6b6b; border-color:rgba(255,107,107,0.4);" data-delete-partner>删除他</button>
                 <button class="modal-btn modal-btn-primary" id="edit-existing-mood" style="font-size:12px; padding:6px 12px;">修改我的</button>
-                <button class="modal-btn modal-btn-primary" id="edit-partner-mood" onclick="editPartnerMoodRecord()" style="font-size:12px; padding:6px 12px; background:rgba(255,107,107,0.8);" data-edit-partner>修改梦角</button>
+                <button class="modal-btn modal-btn-primary" id="edit-partner-mood" onclick="editPartnerMoodRecord()" style="font-size:12px; padding:6px 12px; background:rgba(255,107,107,0.8);" data-edit-partner>修改他</button>
             </div>
         </div>
     </div>
@@ -10648,44 +10648,7 @@
         </div>
     </div>
 
-    <div class="modal" id="disclaimer-modal">
-        <div class="modal-content">
-            <div class="modal-title">
-                <i class="fas fa-scroll"></i><span>关于 & 声明</span>
-            </div>
-            <div id="disclaimer-content" style="font-size: 14px; line-height: 1.8; color: var(--text-secondary); max-height: 50vh; overflow-y: auto; padding-right: 10px;">
-                <div style="text-align: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed var(--border-color);">
-                    <h3 style="color: var(--accent-color); margin-bottom: 10px;">特别鸣谢</h3>
-                    <div style="text-align: center; margin: 15px 0; padding: 10px; background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--accent-color);">
-                        <p style="margin: 5px 0; color: var(--text-primary);">
-                            参考了 <strong>B站 @molina-3- 的传讯网站</strong>
-                        </p>
-                        <p style="margin: 5px 0; font-weight: bold; color: #e53935;">
-                            如果需要更好的沟通体验 请支持哦！
-                        </p>
-                    </div>
-                    <p>感谢 <strong>@苏铂潼</strong></p>
-                    <p style="font-size: 12px; opacity: 0.8;">小红书号：9568228497</p>
-                    <p style="font-size: 12px; margin-top: 5px; font-style: italic;">(聊天统计部分代码参考)</p>
-                </div>
-                <div style="margin-top: 15px;">
-                    <p style="font-weight: bold; color: var(--text-primary); text-align: center;">
-                        原创：小红书 @milk (1149615009)
-                    </p>
-                    <p style="color: #e53935; font-weight: bold; text-align: center; margin-top: 10px; border: 1px solid #e53935; padding: 5px; border-radius: 5px;">
-                        此代码绝对禁止商用和盈利行为，一旦发现追究到底
-                    </p>
-                    <p style="text-align: center; margin-bottom: 15px;">支持二改二传，感谢使用！</p>
-                    <li style="text-align: center; font-size: 1.1em; color: #8A2BE2; list-style: none; margin: 5px 0;"><b>反对性别暴力</b></li>
-                    <li style="text-align: center; font-size: 1.1em; color: #8A2BE2; list-style: none; margin: 5px 0;"><b>尊重不该是奢求,安全必须是底线</b></li>
-                </div>
-            </div>
-            <div class="modal-buttons" style="margin-top: 20px;">
-                <button class="modal-btn modal-btn-primary" id="accept-disclaimer" onclick="(function(){var m=document.getElementById('disclaimer-modal');if(m&&typeof hideModal==='function')hideModal(m);})()" style="width: 100%;">关闭</button>
-            </div>
-        </div>
-    </div>
-
+    
     <div class="modal" id="anniversary-modal">
         <div class="modal-content">
             <div class="ann-header-card" id="ann-header-card" style="display: none;">
@@ -10729,7 +10692,7 @@
                 <div class="ann-editor-content">
                     <div class="ann-form-group">
                         <label class="ann-label"><i class="fas fa-tag"></i>标题名称</label>
-                        <input type="text" class="modal-input" id="ann-input-name" placeholder="例如：恋爱纪念日、梦角生日">
+                        <input type="text" class="modal-input" id="ann-input-name" placeholder="例如：恋爱纪念日、他的生日">
                     </div>
     
                     <div class="ann-form-group">
@@ -11746,7 +11709,7 @@ function applyCustomBubbleCss(cssCode) {
 }
         function getDefaultSettings() {
             return {
-                partnerName: "梦角",
+                partnerName: "他",
                 myName: "我",
                 myStatus: "在线",
                 partnerStatus: "在线",
@@ -12295,7 +12258,7 @@ if (customIntros && customIntros.length > 0) {
         scrambleText(subEl, line2, 2000);
     }, 600);
 } else {
-    document.getElementById('welcome-title-glitch').textContent = "传讯";
+    document.getElementById('welcome-title-glitch').textContent = "starsnmoon";
     document.getElementById('welcome-subtitle-scramble').textContent = "请在设置中添加开场动画";
 }
 
@@ -14377,7 +14340,7 @@ function updateDualMoodStats(stats) {
     if (!container) return;
 
     const mName = (typeof settings !== 'undefined' && settings.myName) ? settings.myName : '我';
-    const pName = (typeof settings !== 'undefined' && settings.partnerName) ? settings.partnerName : '梦角';
+    const pName = (typeof settings !== 'undefined' && settings.partnerName) ? settings.partnerName : '他';
 
     const myTotal = stats.me.total;
     const partnerTotal = stats.partner.total;
@@ -14633,7 +14596,7 @@ function openMoodSelector(dateStr, editTarget) {
     if (weatherInput) weatherInput.value = weatherVal;
     const weatherLabel = document.getElementById('mood-weather-label');
     if (weatherLabel) {
-        var pNameW = (typeof settings !== 'undefined' && settings.partnerName) ? settings.partnerName : '梦角';
+        var pNameW = (typeof settings !== 'undefined' && settings.partnerName) ? settings.partnerName : '他';
         var mNameW = (typeof settings !== 'undefined' && settings.myName) ? settings.myName : '我';
         if (weatherLabel.firstChild) weatherLabel.firstChild.textContent = currentMoodEditTarget === 'me' ? mNameW + '的天气\u00a0' : pNameW + '的天气\u00a0';
     }
@@ -19729,8 +19692,8 @@ let isTourActive = false;
 
 const tourSteps = [
     {
-        title: "✨ 欢迎来到「传讯」",
-        content: "这里是你们专属的私密空间。<br><br>这个教程共 <b>20 步</b>，带你从头到尾认识每一个功能，建议完整看完哦🥺<br><br>点击「下一步」开始吧！",
+        title: "✨ 欢迎来到「starsnmoon」",
+        content: "这里是我们专属的私密空间。<br><br>这个教程共 <b>20 步</b>，带你从头到尾认识每一个功能，建议完整看完哦🥺<br><br>点击「下一步」开始吧！",
         position: 'center'
     },
     {
@@ -19754,13 +19717,13 @@ const tourSteps = [
     {
         element: '#partner-avatar',
         title: "Ta 的头像",
-        content: "这里是<b>梦角的头像</b>，同样点击可以上传更换。",
+        content: "这里是<b>他的头像</b>，同样点击可以上传更换。",
         position: 'bottom'
     },
     {
         element: '#partner-name',
         title: "Ta 的昵称",
-        content: "这是<b>梦角的昵称</b>，同样点击可以修改。",
+        content: "这是<b>他的昵称</b>，同样点击可以修改。",
         position: 'bottom'
     },
     {
@@ -19796,7 +19759,7 @@ const tourSteps = [
     {
         element: '#continue-btn',
         title: "让 Ta 继续说",
-        content: "不知道说什么了？或者想让 Ta 多说几句？<br><br>点击这个按钮，<b>梦角会主动找你说话。",
+        content: "不知道说什么了？或者想让 Ta 多说几句？<br><br>点击这个按钮，<b>他会主动找你说话。",
         position: 'top'
     },
     {
@@ -19828,7 +19791,7 @@ const tourSteps = [
     {
         element: '#advanced-settings',
         title: "🚀 高级功能 — 必看！",
-        content: "<b>高级功能</b>是整个应用最强大的板块，里面有：<br>• <b>心晴手账</b>：记录每天的心情<br>• <b>信封投递</b>：给梦角写一封信<br>• <b>纪念日</b>：倒计时 / 纪念天数<br>• <b>运势占卜</b>：每日运势<br>• <b>自定义回复</b>：让梦角说你想听的话<br>• <b>音乐播放器</b>：背景音乐",
+        content: "<b>高级功能</b>是整个应用最强大的板块，里面有：<br>• <b>心晴手账</b>：记录每天的心情<br>• <b>信封投递</b>：给他写一封信<br>• <b>纪念日</b>：倒计时 / 纪念天数<br>• <b>运势占卜</b>：每日运势<br>• <b>自定义回复</b>：让他说你想听的话<br>• <b>音乐播放器</b>：背景音乐",
         position: 'bottom'
     },
     {
@@ -19863,7 +19826,7 @@ const tourSteps = [
     },
     {
         title: "🎉 你已掌握所有功能！",
-        content: "恭喜你完成了新手引导！现在你已经了解了「传讯」的全部功能。<br><br>希望你们在这里收获满满的爱与幸福 🥺💕",
+        content: "恭喜你完成了新手引导！现在你已经了解了「starsnmoon」的全部功能。<br><br>希望你们在这里收获满满的爱与幸福 🥺💕",
         position: 'center'
     }
 ];
@@ -20444,7 +20407,7 @@ function _buildDailyGreeting() {
         var todayMood = moodDataRaw[todayStr];
         var allMoods = (typeof getAllMoodOptions === 'function') ? getAllMoodOptions() : [];
 
-        var pName = (typeof settings !== 'undefined' && settings.partnerName) ? settings.partnerName : '梦角';
+        var pName = (typeof settings !== 'undefined' && settings.partnerName) ? settings.partnerName : '他';
         var mName = (typeof settings !== 'undefined' && settings.myName) ? settings.myName : '我';
 
         var partnerMoodText = pName + ' 今天还没有记录';
@@ -20935,7 +20898,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.updateDynamicNames = function() {
     try {
-        var pName = (typeof settings !== 'undefined' && settings.partnerName) ? settings.partnerName : '梦角';
+        var pName = (typeof settings !== 'undefined' && settings.partnerName) ? settings.partnerName : '他';
         var mName = (typeof settings !== 'undefined' && settings.myName) ? settings.myName : '我';
 
         var tabPartner = document.getElementById('mood-tab-partner');
@@ -21129,7 +21092,7 @@ window._sendPartnerNotification = function(title, body) {
         if (!('Notification' in window)) return;
         if (Notification.permission !== 'granted') return;
         if (!document.hidden) return; 
-        new Notification(title || '传讯', {
+        new Notification(title || 'mjq', {
             body: body || '对方发来了消息',
             icon: document.querySelector('#partner-avatar img') ? document.querySelector('#partner-avatar img').src : undefined,
             tag: 'partner-msg',
@@ -21997,7 +21960,7 @@ window.addEventListener('load', function() {
             <div class="dg-date-stamp" id="dg-date-stamp">— 今日公告已送达 —</div>
         </div>
         <div class="dg-body">
-            <div class="dg-section-label" id="dg-section-label-partner">梦角今日状态</div>
+            <div class="dg-section-label" id="dg-section-label-partner">他的今日状态</div>
             <div class="dg-mood-panel" id="dg-mood-panel">
                 <div class="dg-mood-icon-big" id="dg-partner-mood-icon">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
@@ -22012,14 +21975,14 @@ window.addEventListener('load', function() {
                     <div class="dg-info-cell-icon">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="1.5"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg>
                     </div>
-                    <div class="dg-info-cell-label" id="dg-weather-label"</>梦角的天气</div>
+                    <div class="dg-info-cell-label" id="dg-weather-label"</>他的天气</div>
                     <div class="dg-info-cell-val" id="dg-weather" onclick="startEditDgWeather(this)" style="cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px;" title="点击编辑">晴朗</div>
                 </div>
                 <div class="dg-info-cell">
                     <div class="dg-info-cell-icon">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     </div>
-                    <div class="dg-info-cell-label" id="dg-status-label">梦角的状态</div>
+                    <div class="dg-info-cell-label" id="dg-status-label">他的状态</div>
                     <div class="dg-info-cell-val" id="dg-status">一切都好</div>
                 </div>
             </div>
